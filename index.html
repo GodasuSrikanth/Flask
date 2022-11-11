@@ -1,9 +1,12 @@
-<html>
-    <head>
-        <title>Flask App</title>
-    </head>
-    <body>
-          <h1>This is our index html</h1>
-          <p>Welcome to index.html</p>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %}
+
+{% block content %}
+
+<p>This is Index page of our website.</p>
+<p> Nice to see you,index page</p>
+
+{% endblock %}
+
+

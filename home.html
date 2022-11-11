@@ -1,16 +1,10 @@
-<html>
-    <head>
-        <title>Flask App</title>
-    </head>
-    <body>
-          <h1>This is our Flask App</h1>
-          <p>Welcome to Flask app</p>
-          <p>create {{content}}</p>
-          {% for i in content %}
-          <p>{{ i }}</p>
-          {% if i== 'java' %}
-          <p>Free course for all</p>
-          {% endif %}
-          {% endfor %}
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<p>This is home page of our website.</p>
+<p> Nice to see you</p>
+
+{% endblock %}
